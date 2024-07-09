@@ -9,7 +9,7 @@ TEST_NAME = tmp_Colleen
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	cc -o $@ $^ -lc
+	$(CC) -o $@ $^ -lc
 
 %.o : %.s
 	$(NASM) $(NFLAG) $< -o $@
